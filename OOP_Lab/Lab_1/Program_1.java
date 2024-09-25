@@ -1,9 +1,7 @@
 package Lab_1;
 import java.util.*;
-public class Program_1 
-{
-	static void nestedMax (int x, int y, int z)
-	{
+public class Program_1 {
+	static void nestedMax (int x, int y, int z){
 		if(x>y)
 			if(x>z)
 				System.out.println(x +" is the largest number");
@@ -14,8 +12,7 @@ public class Program_1
 			if(z>y)
 				System.out.println(z +" is the largest number");
 	}
-	static void ladderMax (int x, int y, int z)
-	{
+	static void ladderMax (int x, int y, int z){
 		if(x>y && x>z)
 			System.out.println(x +" is the largest number");
 		else if(y>x && y>z)
@@ -25,14 +22,12 @@ public class Program_1
 	}
 
 	
-	public static void main(String []args) 
-	{
+	public static void main(String []args) {
 		Scanner sc = new Scanner(System.in);
 		int[] a= new int[3];
 		System.out.println("Give 3 values to compare");
 		
-		for(int i=0; i<3; i++)
-		{
+		for(int i=0; i<3; i++){
 			a[i] = sc.nextInt();
 		}
 		int x= a[0];
